@@ -4,11 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: check_repo
       - uses: action/checkout@v3
-      - name: setup_python
       - uses: action/setup-python@v3
-      - name: setup_poetry
       - uses: action/setup-poetry@v3
       - run: make build
       - run: make test
