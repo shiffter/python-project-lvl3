@@ -9,12 +9,12 @@ jobs:
         with:
           python-version: 3.8
       - name: Install dependencies
-      - run: |
+        run: |
           pip install poetry
           make build
           make pack_install
       - name: tests & linter
-      - run: |
+        run: |
           make lint
           make test
       - name: publish code coverage
