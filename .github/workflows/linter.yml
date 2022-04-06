@@ -23,5 +23,4 @@ jobs:
           CC_TEST_REPORTED_ID: ${{ secrets.CC_TEST_REPORTED_ID }}
         with:
           coverageCommand: make test-cov
-          debug: true
 
