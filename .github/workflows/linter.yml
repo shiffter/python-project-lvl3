@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-python@v3
         with:
             python-version: 3.8
-            uses: Gr1N/setup-poetry@v7
+      - uses: Gr1N/setup-poetry@v7
       - run: make build
       - run: make test
