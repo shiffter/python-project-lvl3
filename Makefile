@@ -1,5 +1,5 @@
 lint:
-	poetry run flake8 modules scripts tests
+	poetry run flake8 page_loader tests
 
 build:
 	poetry build
@@ -12,4 +12,3 @@ make test:
 
 make test-cov:
 	poetry run pytest --cov=page_loader --cov-report xml
-
